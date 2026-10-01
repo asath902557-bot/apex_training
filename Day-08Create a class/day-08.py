@@ -1,16 +1,32 @@
-# Create a class
 class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def display(self):
+    def display_details(self):
+        print("Student:",self.stuNo)
         print("Name:", self.name)
         print("Age:", self.age)
+        print("Marks:", self.marks)
 
+student1 = Student()
+student2 = Student()
 
-# Create an object
-student1 = Student("kulam nabi asath", 18)
+student1.stuNo=1
+student1.name = "kulam nabia sath"
+student1.age = 20
+student1.marks = 85.5
 
-# Access the object's method
-student1.display()
+student2.stuNo=2
+student2.name = "Hari"
+student2.age = 19
+student2.marks = 89.4
+
+student1.display_details()
+student2.display_details()
+
+OUTPUT:
+Student: 1
+Name: kulam nabi asath
+Age: 20
+Marks: 85.5
+Student: 2
+Name: Hari
+Age: 19
+Marks: 89.4
